@@ -23,8 +23,8 @@ class _CarouselIndicatorWidgetState extends State<CarouselIndicatorWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(children: [
+    return Container(
+      child: Column(children: [
         CarouselSlider(
           items: imageSliders,
           options: CarouselOptions(
