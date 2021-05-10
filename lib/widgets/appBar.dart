@@ -23,10 +23,6 @@ class _AppBarWidgetState extends State<AppBarWidget> {
           fontWeight: FontWeight.w700,
         ),
       ),
-      // leading: GestureDetector(
-      //   onTap: () {},
-      //   child: Icon(Icons.menu),
-      // ),
     );
   }
 }
