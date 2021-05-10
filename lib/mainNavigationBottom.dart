@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/account.dart';
 import 'package:flutter_application_1/screens/channels.dart';
 import 'package:flutter_application_1/screens/home.dart';
+import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
 class MainHomeBottomNavigation extends StatefulWidget {
   @override
@@ -34,12 +35,14 @@ class _MainHomeBottomNavigationState extends State<MainHomeBottomNavigation> {
           currentIndex: _selectedIndex,
           type: BottomNavigationBarType.fixed,
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.article), label: "channels"),
+                icon: Icon(FeatherIcons.home), label: "Home"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.rate_review), label: "review"),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: "account"),
+                icon: Icon(FeatherIcons.layout), label: "Channels"),
+            BottomNavigationBarItem(
+                icon: Icon(FeatherIcons.bookOpen), label: "Review"),
+            BottomNavigationBarItem(
+                icon: Icon(FeatherIcons.settings), label: "Settings"),
           ],
           onTap: (index) {
             setState(() {
